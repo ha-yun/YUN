@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400&display=swap');
+*{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 1.1rem;
+}
+html,body,ul,li,div,section,h1,p{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-weight: bolder;
+}
+body{
+    background: url(content/city.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* header */
+.bg-light {
+    opacity: 0.95;}
+.container-fluid{
+    margin: auto 3%;
+}
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 0;
+}
+
+/* main */
+.flex-column{
+    display: flex;
+    align-items: center;
+}
+    main section{
+        width: 100%;
+        padding: 5% 0;
+        text-align: center;
+    }
+/* yun */
+#yun{
+    background-color: rgba(248, 248, 255, 0.5);
+    padding-top: 2%;
+}
+    .yun_div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2%;
+        width: 100%;
+    }
+    .yun_div img{
+        padding: 1%;
+        width: 30%;
+    }
+    .yun_div p{
+        padding: 1%;
+        width: 30%;
+    }
+/* about */
+#about{
+    background-color: rgb(248, 248, 255);
+}
+    .about_ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        width: 100%;
+    }
+    .about_ul li{
+        padding: 5%;
+        width: 30%;
+    }
+/* skills */
+#skills{
+    background-color: #6f42c1;
+    color: ghostwhite;
+}
+.skills_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* project_show, project */
+#project_show{
+    margin: 0;
+    background-color: #3d8bfd;
+    color: ghostwhite;
+    position: relative;
+}
+.carousel{
+    height: 35vw;
+    margin: 0 auto;
+}
+.card{
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: 30vw;
+    margin: 1.5% auto;
+    background-color: #3d8bfd;
+    border: none;
+}
+    .card img{
+        width: 50%;
+        height: 30vw;
+    }
+    .card p{
+        padding: 3%;
+    }
+#project{
+    background-color: #3d8bfd;
+    color: ghostwhite;
+}
+
+/* profile */
+#profile{
+    background-color: #495057;
+    color: ghostwhite;
+}
+
+/* footer */
+footer{
+    background-color: rgba(248, 248, 255, 0.5);
+    padding: 3.6%;
+}
