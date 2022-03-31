@@ -69,7 +69,9 @@ body{
 .yun_div div{
     width: 60%;
     text-align: left;
+    font-weight: 400;
     padding-left: 5%;
+    padding-right: 14%;
 }
     .yun_div h1{
         margin: 5% 0;
