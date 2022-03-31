@@ -21,6 +21,9 @@ h3,h4{
 ul{
     list-style: none;
 }
+html,body{
+    width: 100%;
+}
 body{
     background: url(content/city.jpg) center no-repeat;
     background-size: cover;
