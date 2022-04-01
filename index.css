@@ -59,7 +59,7 @@ body{
     }
 /* yun */
 #yun{
-    background-color: rgba(248, 248, 255, 0.5);
+    background-color: rgba(248, 248, 255, 0.7);
     padding-top: 2%; 
 }
 .yun_div{
@@ -217,6 +217,9 @@ body{
 .carousel button span ion-icon{
     font-size: 4rem;
 }
+.carousel-indicators{
+    margin-bottom: 0;
+}
 .card{
     flex-direction: row;
     align-items: center;
@@ -257,6 +260,7 @@ body{
     padding-top: 0;
 }
     #project li{
+        width: 90%;
         margin: 5%;
         padding: 3% 0;
         border-radius: 50px;
@@ -290,7 +294,7 @@ body{
         transform: translateX(10px);
     }
 }
-    #profile div{
+    #profile .flex-column{
         width: 80%;
         margin: 0 auto;
     }
@@ -325,8 +329,9 @@ body{
 
 /* btn up */
 .btn_up{
-    left: 88%;
-    margin: 3%;
+    left: 87%;
+    width: 15%;
+    margin: 2% 0;
 }
     .btn_up a{
         color: rgb(46, 46, 46);
@@ -351,3 +356,85 @@ footer div a{
 footer ion-icon{
     font-size: 2rem;
 }
+
+@media all and (max-width:1024px){
+    .yun_div{flex-direction: column !important;}
+    .yun_div div{
+        width: 90%;
+        padding: 2% !important;
+        text-align: center !important;
+    }
+    #yun a{margin: 1%;}
+    .skills_list{width: 40%;}
+    .carousel{width: 100%;}
+
+    .carousel-control-next, .carousel-control-prev{
+        width:auto !important;
+    }
+    .project_div{
+        flex-direction: column !important;
+        width: 100% !important;}
+    .project_div p{
+        width: 90% !important;
+        padding: 0;}
+    .project_div img{
+        width: 80%;
+        margin-bottom: 2%;
+    }
+}
+@media all and (max-width:768px){
+    *{font-size: 1rem;}
+    .about_ul{
+        flex-direction: column !important;
+        width: 100%;}
+    .about_ul div{
+        margin: 5% auto;
+    }
+    #skills .flex-row{
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .skills_list{
+        width: 75% !important;}
+    .card{
+        flex-direction: column;
+        height: max-content}
+    .card img{
+        width: 80%;
+        height: auto;
+    }
+    .card a{
+        font-size: 1.1rem;}
+    .card ion-icon{
+        font-size: 1.1rem;}
+    .card p{
+        width: 95%;
+        font-size: 1rem;}
+    .carousel button span ion-icon{
+        font-size: 2rem;}
+    .profile_box{
+        flex-direction: column !important;}
+    .profile_box p{
+        width: 100%;
+    }
+    .profile_box h4{
+        width: auto;}
+}
+@media all and (max-width:480px){
+    .yun_div div{
+        width: 100%;
+    }
+    .card{
+        height: max-content;
+    }
+    .project_div p{
+        width: 85% !important;}
+    .btn_up{
+        left: 85%;
+        margin: 5% 0;
+    }
+    .btn_up a ion-icon{
+        font-size: 2.3rem;
+    }
+}
+
