@@ -245,8 +245,8 @@ body{
         line-height: normal;
     }
     .card img{
-        width: 50%;
-        height: 37vw;
+        max-width: 50%;
+        margin: 3%;
     }
     .card p{
         width: 50%;
@@ -281,6 +281,13 @@ body{
     }
     .project_div img{
         width: 40%;
+        filter: saturate(80%);
+        animation: blink 5s infinite;
+    }
+    @keyframes blink {
+        50%{
+            filter: saturate(150%);
+        }
     }
     .project_div p{
         width: 60%;
@@ -409,7 +416,7 @@ footer ion-icon{
         flex-direction: column;
         height: max-content}
     .card img{
-        width: 80%;
+        max-width: 80%;
         height: auto;
     }
     .card a{
