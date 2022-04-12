@@ -411,7 +411,7 @@ footer ion-icon{
         align-items: center !important;
     }
     .skills_list{
-        width: 75% !important;}
+        width: 85% !important;}
     .card{
         flex-direction: column;
         height: max-content}
@@ -444,7 +444,7 @@ footer ion-icon{
         height: max-content;
     }
     .project_div p{
-        width: 85% !important;}
+        width: 90% !important;}
     .btn_up{
         left: 85%;
         margin: 5% 0;
