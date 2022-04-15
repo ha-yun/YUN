@@ -161,7 +161,7 @@ body{
         }
     }
 .skills_list{
-    width: 33%;
+    width: 37%;
     color: black;
     background-color: ghostwhite;
     border-radius: 10px;
@@ -276,7 +276,7 @@ body{
         background-color: #9ec5fe;
     }
     .project_div{
-        width: 80%;
+        width: 90%;
         margin: 3% auto;
     }
     .project_div img{
