@@ -7,7 +7,7 @@ $(function(){
     ShowList();
     Event();
     function ShowList(){
-        var SCROLL= $(window).scrollTop();
+        let SCROLL= $(window).scrollTop();
         if(pro_show.offset().top < SCROLL && SCROLL < profile.offset().top ){
             BtnList.fadeIn();
             $(Project_li).each(function(i){

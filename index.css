@@ -12,6 +12,18 @@ h1{
     font-weight: bolder;
     margin: 3%;
 }
+.ml16 {
+    color: #402d2d;
+    text-transform: uppercase;
+    overflow: hidden;
+  }
+  
+  .ml16 .letter {
+    display: inline-block;
+    line-height: 1em;
+    font-size: 2rem;
+  }
+
 h1 ion-icon{
     font-size: 2rem;
 }
