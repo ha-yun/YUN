@@ -264,7 +264,8 @@ body{
     }
     .card img{
         max-width: 50%;
-        margin: 3%;
+        max-height: 300px;
+        margin: 1%;
     }
     .card p{
         width: 50%;
