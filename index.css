@@ -80,6 +80,7 @@ body{
 }
 .yun_div img{
     width: 40%;
+    box-shadow: 0px 0px 10px 1px black;
 }
 .yun_div div{
     width: 60%;
@@ -95,6 +96,7 @@ body{
         animation: blink 5s linear infinite;
         font-size: 1rem;
         font-weight: bold;
+        box-shadow: 0px 0px 5px 1px #9ec5fe;
     }
     #yun a:hover{
         background-color: #9ec5fe;
@@ -145,7 +147,7 @@ body{
     }
     .about_ul strong{
         margin: 2%;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     }
 
 
