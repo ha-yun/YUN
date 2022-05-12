@@ -92,6 +92,16 @@ body{
     .yun_div h1{
         margin: 5% 0;
     }
+        .yun_div h1 ion-icon{
+            animation: bling 2s infinite;
+            transform: rotate(-10deg);
+        }
+        @keyframes bling{
+            50%{
+                color: yellow;
+                transform: rotate(10deg);
+            }
+    }
     #yun a{
         animation: blink 5s linear infinite;
         font-size: 1rem;
@@ -110,19 +120,18 @@ body{
     }
 /* about */
 #about{
-    background-color: rgb(248, 248, 255);
+    background-color: #495057;
+    color: ghostwhite;
 }
 #about h1{
     margin-bottom: 0;
 }
     #about h1 ion-icon{
-        animation: bling 2s infinite;
-        transform: rotate(-10deg);
+        animation: person 2s infinite;
     }
-    @keyframes bling{
+    @keyframes person{
         50%{
-            color: yellow;
-            transform: rotate(10deg);
+            transform: translateX(10px);
         }
     }
 .about_ul{
@@ -140,14 +149,13 @@ body{
     }
     .about_ul ion-icon{
         font-size: 2rem;
-        color: black;
+        color: ghostwhite;
     }
     .about_ul ion-icon:hover{
         color: #3d8bfd;
     }
-    .about_ul strong{
+    .about_ul span{
         margin: 2%;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     }
 
 
@@ -316,36 +324,6 @@ body{
     .project_div strong{
         display: block;
     }
-/* profile */
-#profile{
-    background-color: #495057;
-    color: ghostwhite;
-}
-#profile h1 ion-icon{
-    animation: person 2s infinite;
-}
-@keyframes person{
-    50%{
-        transform: translateX(10px);
-    }
-}
-    #profile .flex-column{
-        width: 80%;
-        margin: 0 auto;
-    }
-.profile_box{
-    align-items: flex-start;
-    margin: 3% 0;
-}
-    .profile_box h4{
-        width: 30%;
-    }
-    .profile_box p{
-        text-align: left;
-        width: 70%;
-    }
-
-
 
 /* btn list */
 .btn_list{
