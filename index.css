@@ -13,7 +13,7 @@ h1{
     margin: 3%;
 }
 .ml16 {
-    color: #402d2d;
+    color: #00214d;
     text-transform: uppercase;
     overflow: hidden;
   }
@@ -37,13 +37,22 @@ html,body{
     width: 100%;
 }
 body{
-    background: url(content/city.jpg) center no-repeat;
+    background: url(content/flower.jpg) center no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 /* header */
+.navbar-light .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.5);
+    color: #00214d;}
+header{
+    background-color: #ff5470;
+}
+.offcanvas.show{
+    background-color: #ff5470;
+}
 .bg-light {
-    opacity: 0.95;}
+    --bs-bg-opacity: 0;}
 .container-fluid{
     margin: auto 3%;
 }
@@ -79,11 +88,11 @@ body{
     margin: auto;
 }
 .yun_div img{
-    width: 40%;
-    box-shadow: 0px 0px 10px 1px black;
+    width: 30%;
+    box-shadow: 0px 0px 10px 1px #00214d;
 }
 .yun_div div{
-    width: 60%;
+    width: 70%;
     text-align: left;
     font-weight: 400;
     padding-left: 5%;
@@ -103,25 +112,22 @@ body{
             }
     }
     #yun a{
-        animation: blink 5s linear infinite;
+        margin-top: 5%;
+        border: none;
         font-size: 1rem;
         font-weight: bold;
-        box-shadow: 0px 0px 5px 1px #9ec5fe;
+        background-color: #ff5470;
+        color: #00214d;
+        box-shadow: 0px 0px 5px 1px #00214d;
     }
     #yun a:hover{
-        background-color: #9ec5fe;
-        color: black;
-    }
-    @keyframes blink{
-        50%{
-            background-color: #9ec5fe;
-            color: black;
-        }
+        background-color: #00214d;
+        color: #ff5470;
     }
 /* about */
 #about{
-    background-color: #495057;
-    color: ghostwhite;
+    background-color: #fde24f;
+    color: #00214d;
 }
 #about h1{
     margin-bottom: 0;
@@ -149,10 +155,10 @@ body{
     }
     .about_ul ion-icon{
         font-size: 2rem;
-        color: ghostwhite;
+        color: #00214d;
     }
     .about_ul ion-icon:hover{
-        color: #3d8bfd;
+        color: #ff5470;
     }
     .about_ul span{
         margin: 2%;
@@ -161,8 +167,8 @@ body{
 
 /* skills */
 #skills{
-    background-color: #6f42c1;
-    color: ghostwhite;
+    background-color: #fde24f;
+    color: black;
 }
     #skills h1 ion-icon{
         animation: rocket 4s infinite;
@@ -182,42 +188,43 @@ body{
             opacity: 1;
         }
     }
+.skills_wrap{
+    width: 100%;
+}
 .skills_list{
-    width: 37%;
-    color: black;
-    background-color: ghostwhite;
-    border-radius: 10px;
+    display: inline-block;
+    width: 20%;
+    color: #00214d;
+    border: 1px solid #1b2d45;
     margin: 2%;
-    padding: 1%;
     text-align: center;
     transition: 0.3s;
 }
-    .skills_list:hover{
-        transform: scale(1.02);
-    }
-    .skills_list h4{
-        width: 50%;
-        border-bottom: 1px solid black;
-        margin: 5% auto;
-    }
     .skills_list img{
-        width: 50%;
+        max-width: 35%;
         margin: 4%;
     }
     .skills_list span{
         display: block;
-        width: 80%;
+        width: 100%;
         padding: 1% 5%;
         margin: 0 auto 5% auto;
-        border-left: 1px solid rgba(114, 114, 114, 0.5);
-        border-bottom: 1px solid rgba(114, 114, 114, 0.5);
         text-align: left;
     }
+.skills_list div{
+    background-color: ghostwhite;
+    margin: 3%;
+    transition: 0.1s;
+}
+.skills_list div:hover{
+    transform: scale(1.02);
+}
 
 /* project_show */
 #project_show{
     margin: 0;
-    background-color: #3d8bfd;
+    background-color: #ff5470;
+    color: #00214d;
     position: relative;
     padding-bottom: 3%;
 }
@@ -282,7 +289,7 @@ body{
     }
     .card a{
         display: block;
-        color: black;
+        color: #00214d;
         font-size: 2rem;
         font-weight: bold;
         text-decoration: none;
@@ -292,15 +299,17 @@ body{
 
 /* project */
 #project{
-    background-color: #3d8bfd;
+    background-color: #ff5470;
+    color: #00214d;
     padding-top: 0;
 }
     #project li{
         width: 90%;
         margin: 5%;
         padding: 3% 0;
-        border-radius: 50px;
-        background-color: #9ec5fe;
+        background-color: #fde24f;
+        color: #00214d;
+        box-shadow: 0px 0px 5px 1px #00214d;
     }
     .project_div{
         width: 90%;
@@ -332,7 +341,7 @@ body{
     margin: 0 3%;
 }
 .btn_list a{
-    color: rgb(46, 46, 46);
+    color: #00214d;
     text-decoration: none;
     transition: 0.5s;
 }
@@ -347,12 +356,13 @@ body{
     margin: 2% 0;
 }
     .btn_up a{
-        color: rgb(46, 46, 46);
+        color: #00214d;
         text-decoration: none;
         padding: 10%;
+        transition: 0.2s;
     }
     .btn_up a:hover{
-        color: #084298;
+        color: ghostwhite;
     }
     .btn_up a ion-icon{
         font-size: 3rem;
@@ -360,12 +370,15 @@ body{
 
 /* footer */
 footer{
-    background-color: rgba(248, 248, 255, 0.5);
+    background-color: #ff5470;
     padding: 3.6%;
 }
 footer div a{
-    color: black;
+    color: #00214d;
 }
+    footer div a:hover{
+        color: #fde24f;
+    }
 footer ion-icon{
     font-size: 2rem;
 }
