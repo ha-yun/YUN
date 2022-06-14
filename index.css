@@ -204,7 +204,7 @@ header{
     font-size: 1rem;
     font-weight: bold;
     transition: 0.3s;
-    z-index: 10;
+    z-index: 100;
 }
 #skill_btn1{
     background-color: #ff5470;
@@ -236,8 +236,6 @@ header{
     box-shadow: -2px -2px 5px 1px #ff5470;
 }
 }
-
-
     .skill_img{
         max-width: 60%;
         margin: 5.5%;
@@ -256,16 +254,16 @@ header{
         z-index: 0;
         animation: spin_uni2 linear infinite 10s;
     }
-@keyframes spin_uni {
-    100%{
-        transform: rotate(360deg);
+    @keyframes spin_uni {
+        100%{
+            transform: rotate(360deg);
+        }
     }
-}
-@keyframes spin_uni2 {
-    100%{
-        transform: rotate(-360deg);
+    @keyframes spin_uni2 {
+        100%{
+            transform: rotate(-360deg);
+        }
     }
-}
 .skills_txt{
     position: absolute;
     top : 45%;
@@ -306,7 +304,7 @@ header{
         }
     }
 .carousel{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 2%;
 }
@@ -334,8 +332,7 @@ header{
     }
     .card img{
         max-width: 50%;
-        max-height: 300px;
-        margin: 1%;
+        margin: 0 1%;
     }
     .card p{
         width: 50%;
@@ -439,16 +436,22 @@ footer ion-icon{
 }
 
 @media all and (max-width:1024px){
-    .yun_div{flex-direction: column !important;}
-    .yun_div div{
-        width: 90%;
-        padding: 2% !important;
-        text-align: center !important;
+    #yun div p{
+        width: 80%;
     }
-    #yun a{margin: 1%;}
     .skills_list{width: 40%;}
     .carousel{width: 100%;}
-
+    .skills_wrap{
+        padding: 5% 0;
+    }
+    .skills_txt{
+        top: 30%;
+        font-size: 1rem;
+    }
+    .skills_txt div{
+        width: 49%;
+        margin: 1%;
+    }
     .carousel-control-next, .carousel-control-prev{
         width:auto !important;
     }
@@ -456,6 +459,7 @@ footer ion-icon{
         flex-direction: column !important;
         width: 100% !important;}
     .project_div p{
+        font-size: 1rem;
         width: 90% !important;
         padding: 0;}
     .project_div img{
@@ -465,18 +469,32 @@ footer ion-icon{
 }
 @media all and (max-width:768px){
     *{font-size: 1rem;}
+    .yun_div{flex-direction: column !important;}
+    .yun_div h1{
+        width: 100%;
+    }
+    #yun div p{
+        width: 90%;
+    }
     .about_ul{
         flex-direction: column !important;
         width: 100%;}
-    .about_ul div{
-        margin: 5% auto;
+    .about_ul li{
+        padding: 0;
     }
+    .about_ul div{
+        margin: 2% auto;
+    }
+    .about_ul span{margin: 0}
+
     #skills .flex-row{
         flex-direction: column !important;
         align-items: center !important;
     }
-    .skills_list{
-        width: 85% !important;}
+    .skills_wrap div{
+        width: 88%;
+        margin: 4% 0;
+    }
     .card{
         flex-direction: column;
         height: max-content}
@@ -502,16 +520,13 @@ footer ion-icon{
         width: auto;}
 }
 @media all and (max-width:480px){
-    .yun_div div{
-        width: 100%;
-    }
     .card{
         height: max-content;
     }
     .project_div p{
         width: 90% !important;}
     .btn_up{
-        left: 85%;
+        left: 81%;
         margin: 5% 0;
     }
     .btn_up a ion-icon{
