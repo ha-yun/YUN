@@ -366,6 +366,7 @@ header{
     background-color: #ff5470;
     color: #00214d;
     padding-top: 0;
+    text-align: center;
 }
     #project li{
         width: 90%;
@@ -379,11 +380,11 @@ header{
         text-shadow: 1px 1px 1px #ff5470;
     }
     .project_div{
-        width: 90%;
-        margin: 3% auto;
+        width: 100%;
+        margin: 2% auto;
     }
     .project_div img{
-        width: 50%;
+        width: 30%;
         filter: saturate(80%);
         animation: blink 5s infinite;
     }
@@ -393,7 +394,7 @@ header{
         }
     }
     .project_div p{
-        width: 40%;
+        width: 60%;
         padding-left: 5%;
         text-align: left;
     }
@@ -403,11 +404,24 @@ header{
         padding: 1%;
         margin-bottom: 1%;
     }
-    .project_div span{
+    #project .page_link{
         display: block;
-        border-top: 1px dotted rgba(0, 33, 77, 0.6);
-        padding-top: 1%;
-        margin-top: 1%;
+        width: 15%;
+        text-align: center;
+        text-decoration: none;
+        color: #00214d;
+        background-color: #ff5470;
+        padding: 0.5%;
+        margin: 1% auto;
+        border-radius: 30px;
+        font-weight: bold;
+        box-shadow: 0px 0px 5px 1px #00214d;
+        transition: 0.3s;  
+    }
+    #project .page_link:hover{
+        background-color: #00214d;
+        color: #ff5470;
+        box-shadow: 0px 0px 5px 1px #ff5470;
     }
 
 /* btn list */
