@@ -17,6 +17,8 @@
         <script src="index.js"></script>
     </head>
     <body>
+        <video src="content/Underwater.mp4" autoplay muted loop id="mainBG"></video>
+        <img src="content/sea_bg2.png" class="mainBG2">
         <header class="sticky-top">
             <nav class="navbar navbar-light bg-light">
                 <div class="container-fluid">
@@ -44,19 +46,24 @@
         <main class="flex-column">
             <section id="yun">
                 <div class="yun_div">
-                    <h1>YUN</h1>
+                    <div class="flex-row">
+                        <div class="wavy">
+                            <span style="--i:1">Y</span>
+                            <span style="--i:2">U</span>
+                            <span style="--i:3">N</span>
+                        </div>
+                    </div>   
                     <p>
                         안녕하세요 협력의 가치를 소중히 하며 <br>
                         성실하게 발전하고 있는 신입<strong>웹개발자</strong> 윤현정입니다.<br>
                     </p>
-                    
                 </div>
-                <a id="yun_btn" href="#about" class="btn btn-lg">자세히 보기</a>
+                <a id="yun_btn" href="#about" class="btn btn-lg"><img src="content/btn_down.png" alt="btn_down"></a>
             </section>
 
             <section id="about">
                 <h1><ion-icon name="bicycle"></ion-icon>ABOUT ME</h1>
-                    <div class="about_wrap" data-aos="fade-up">
+                    <div class="about_wrap"  data-aos="fade-up">
                         <div class="about_text">
                             <img src="content/yun_img.png" class="d-block img-fluid" alt="yun">
                             <div>
@@ -136,14 +143,14 @@
                                     <img src="content/hanyul01.png" class="rounded img-fluid" alt="project1">
                                     <p>
                                         <a href="#hanyul"><ion-icon name="attach"></ion-icon>한율</a>
-                                        #반응형 #웹 표준 #자동 슬라이드 #그리드 레이아웃
+                                        #반응형 #웹 표준<br> #자동 슬라이드 #그리드 레이아웃
                                     </p>
                                 </div>
                                 <div class="flex-column">
                                     <img src="content/diary01.png" class="rounded img-fluid" alt="project2">
                                     <p>
                                         <a href="#diary"><ion-icon name="attach"></ion-icon>우리들의 비밀 이야기</a>
-                                        #반응형 #웹 표준 #크로스 브라우징 #가로스크롤 #Modal #다이어리
+                                        #반응형 #웹 표준 #크로스 브라우징<br> #가로스크롤 #Modal #다이어리
                                     </p>
                                 </div>
                             </div>  
@@ -154,14 +161,14 @@
                                     <img src="content/mam01.png" class="rounded img-fluid" alt="project3">
                                     <p>
                                         <a href="#mammalia"><ion-icon name="attach"></ion-icon>MAMMALIA</a>
-                                        #적응형 #모바일 #웹 표준 #웹접근성(skip메뉴) #크로스 브라우징 #인클루드 #백과사전
+                                        #적응형 #모바일 #웹 표준 #웹접근성(skip메뉴) #크로스 브라우징<br> #인클루드 #백과사전
                                     </p>
                                 </div>
                                 <div class="flex-column">
                                     <img src="content/ocean01.png" class="rounded img-fluid" alt="project4">
                                     <p>
                                         <a href="#ocean"><ion-icon name="attach"></ion-icon>OCEAN</a>
-                                        #반응형 #Parallax Scrolling #AOS #Modal #바다 #사계절
+                                        #반응형<br> #Parallax Scrolling #AOS #Modal #바다 #사계절
                                     </p>
                                 </div>
                             </div> 
@@ -172,7 +179,7 @@
                                     <img src="content/catch01.png" class="rounded img-fluid" alt="project5">
                                     <p>
                                         <a href="#catch"><ion-icon name="attach"></ion-icon>Catch Ketch Sticker</a>
-                                        #반응형 #비쥬얼 슬라이드 #아코디언 메뉴 #REACT #TypeScript
+                                        #반응형<br> #비쥬얼 슬라이드 #아코디언 메뉴 #REACT #TypeScript
                                     </p>
                                 </div>
                                 <div class="flex-column">

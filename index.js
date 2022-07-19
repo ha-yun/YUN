@@ -59,7 +59,7 @@ $(function(){
             HEADER.css({'background-color':'#92B4EC'})
         }else{
             HeaderA.css({'opacity':0})
-            HEADER.css({'background-color':'transparent'})
+            HEADER.css({'background-color':'rgba(255, 242, 242, 0.1)'})
         }
     }
 
