@@ -652,6 +652,15 @@ footer ion-icon{
         width: auto;}
 }
 @media all and (max-width:480px){
+    .skills_txt{
+        top: 20%;
+    }
+        .skills_txt div{
+            width: 100%;
+        }
+        .skills_txt img{
+            width: 78%;
+        }
     .card{
         height: max-content;
     }
