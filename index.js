@@ -49,8 +49,23 @@ $(function(){
         }
     }
 
+    function HeaderICON(){
+        let SCROLL = $(window).scrollTop();
+        let HeaderA = $("#header_icon");
+        let BeforeAbout = $("#yun_btn");
+        let HEADER = $("header");
+        if(SCROLL > BeforeAbout.offset().top){
+            HeaderA.css({'opacity':1})
+            HEADER.css({'background-color':'#92B4EC'})
+        }else{
+            HeaderA.css({'opacity':0})
+            HEADER.css({'background-color':'transparent'})
+        }
+    }
+
     function Event(){
         $(window).on('scroll',ShowList);
+        $(window).on('scroll',HeaderICON);
         skills_list1_btn.on('click', SkillsLeft);
         skills_list2_btn.on('click', SkillsRight);
     }
