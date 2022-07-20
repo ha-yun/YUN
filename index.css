@@ -164,7 +164,7 @@ header{
     position: relative;
     width: 100%;
     margin: auto;
-    padding: 9% 0 6%;
+    padding: 9% 0 10%;
 }
 .yun_div h1{
     margin: 2%;
@@ -621,7 +621,7 @@ footer ion-icon{
 
 @media all and (max-width:1024px){
     .yun_div{
-        padding: 9% 0 12%;
+        padding: 9% 0 20%;
     }
     #yun div p{
         width: 80%;
