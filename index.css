@@ -707,10 +707,14 @@ footer ion-icon{
     .card{
         flex-direction: column;
         height: max-content}
+    .card .flex-column{
+        margin-top: 20px;
+    }
     .card img{
         max-width: 80%;
         height: auto;
     }
+
     .card a{
         font-size: 1rem;}
     .card ion-icon{
@@ -746,6 +750,9 @@ footer ion-icon{
     }
     .ml16 .letter{
         font-size: 0.9rem;
+    }
+    #about p{
+        font-size:0.6rem;
     }
     .about_ul{
         grid-template-columns: repeat(2, 1fr);
