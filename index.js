@@ -56,10 +56,10 @@ $(function(){
         let HEADER = $("header");
         if(SCROLL > BeforeAbout.offset().top){
             HeaderA.css({'opacity':1})
-            HEADER.css({'background-color':'#92B4EC'})
+            HEADER.css({'background-color':'rgb(255 255 255 / 70%)'})
         }else{
             HeaderA.css({'opacity':0})
-            HEADER.css({'background-color':'rgba(255, 242, 242, 0.1)'})
+            HEADER.css({'background-color':'rgb(255 255 255/ 10%)'})
         }
     }
 
