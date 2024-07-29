@@ -1,14 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @font-face {
     font-family: 'LeferiPoint-WhiteObliqueA';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Eulyoo1945-SemiBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-SemiBold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -22,13 +16,13 @@ html,body,ul,li,div,section,h1,p{
     box-sizing: border-box;
 }
 h1{
-    font-family: 'LeferiPoint-WhiteObliqueA';
+    font-family: "Lato", sans-serif;
     font-weight: bolder;
     margin: 3%;
     margin-bottom: 0;
 }
 a{
-    font-family: 'LeferiPoint-WhiteObliqueA';
+    font-family: "Lato", sans-serif;
 }
 .ml16 {
     color: #00214d;
@@ -47,7 +41,7 @@ h1 ion-icon{
 }
 h3,h4{
     font-weight: bold;
-    font-family: 'LeferiPoint-WhiteObliqueA';
+    font-family: "Lato", sans-serif;
 }
 ul,li{
     list-style: none;
@@ -133,9 +127,9 @@ header{
 /* yun */
 #yun{
     background-color: rgb(255 255 255/ 10%);
-    padding-top: 2%; 
     overflow: hidden;
     position: relative;
+    height: calc(100vh - 70px);
 }
 .yun_div{
     color: white;
@@ -185,16 +179,18 @@ header{
     font-size: 1.5rem;
 }
     #yun_btn{
-        position: relative;
+        position: absolute;
+        bottom:15vh;
+        left:50%;
+        transform: translateX(-50%);
         margin-top: 1%;
         border: none;
-        color: #00214d;
+        color: #fff;
         box-shadow: 0px 0px 0px 1px #ffffffa4;
         border-radius: 2em;
         z-index: 1000;
-        padding: 0 1%;
+        padding: 0 16px;
         text-align: center;
-        background: #ffffff6b;
     }
         #yun_btn:hover{
             background-color: rgba(255, 242, 242, 0.6);
@@ -232,15 +228,21 @@ header{
 #about{
     background-color: rgba(255, 255, 255, 0.6);
     color: #00214d;
-    padding: 3% 0 5%;
+    padding: 70px 0 5%;
     text-align: center;
+}
+#about h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
     #about h1 ion-icon{
         animation: person 2s infinite;
+        transform: translateX(-10px);
     }
     @keyframes person{
         50%{
-            transform: translateX(10px);
+            transform: translateX(2px);
         }
     }
 
@@ -606,6 +608,12 @@ footer ion-icon{
     }
     .about_text{
         width: 100%;
+        flex-direction: column;
+    }
+    .about_text img{
+        margin-right: 0;
+        margin-bottom:20px;
+        min-width: 120px;
     }
     .about_ul{
         width:100%;
@@ -638,6 +646,9 @@ footer ion-icon{
     }
 }
 @media all and (max-width:768px){
+    #yun{
+        height:calc(100vh - 50px);
+    }
     *{font-size: 1rem;}
     #yun div p{
         font-size: 1.2rem;
@@ -652,13 +663,10 @@ footer ion-icon{
         font-size: 1rem;
     }
     .about_text{
-        padding: 3% 0 5%;
+        padding: 20px 0;
     }
     .about_text p{
-        font-size: 0.8rem;
-    }
-    .about_ul ion-icon{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .about_ul span{
         font-size: 0.8rem;
@@ -709,7 +717,7 @@ footer ion-icon{
 }
 @media all and (max-width:480px){
     *{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     #yun .title{
         font-size: 20px;
@@ -717,18 +725,7 @@ footer ion-icon{
     #yun_btn img{
         width: 50%;
     }
-    h1{
-        font-size: 1.2rem;
-    }
-    h2{
-        font-size: 1rem;
-    }
-    .ml16 .letter{
-        font-size: 0.9rem;
-    }
-    #about p{
-        font-size:0.6rem;
-    }
+
     .about_ul{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2,1fr);
