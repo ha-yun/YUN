@@ -137,6 +137,14 @@ header{
     overflow: hidden;
     position: relative;
 }
+.yun_div{
+    color: white;
+}
+#yun .title{
+    font-size: 32px;
+    font-weight: 800;
+    font-family: 'LeferiPoint-WhiteObliqueA';
+}
 .wavy {
     position: relative;
     -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
@@ -164,7 +172,7 @@ header{
     position: relative;
     width: 100%;
     margin: auto;
-    padding: 9% 0 10%;
+    padding: 9% 0 20px;
 }
 .yun_div h1{
     margin: 2%;
@@ -181,11 +189,12 @@ header{
         margin-top: 1%;
         border: none;
         color: #00214d;
-        box-shadow: 0px 0px 5px 1px #00214da4;
+        box-shadow: 0px 0px 0px 1px #ffffffa4;
         border-radius: 2em;
         z-index: 1000;
         padding: 0 1%;
         text-align: center;
+        background: #ffffff6b;
     }
         #yun_btn:hover{
             background-color: rgba(255, 242, 242, 0.6);
@@ -250,6 +259,9 @@ header{
     padding: 2% 0;
     text-align: left;
 }
+.about_text p{
+    font-weight: 300;
+}
 .about_text h2 ion-icon{
     font-size: 0.8em;
     line-height: 0.8em;
@@ -262,8 +274,9 @@ header{
         transform: rotate(10deg);
     }}
 .about_text img{
-    margin-right: 3%;
+    margin-right: 6%;
     width: 30%;
+    filter: drop-shadow(1px 4px 5px #00214dce)
 }
 .about_ul{
     display: grid;
@@ -274,11 +287,11 @@ header{
     align-content: center;
     justify-content: center;
     width: 70%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
     .about_ul li{
         width: 100%;
-        padding: 1%;
+        padding: 1rem;
         margin: 0 2%;
         text-align: center;
         border-bottom: 3px dotted #6E85B7;
@@ -303,6 +316,8 @@ header{
     }
     .about_ul span{
         margin: 2%;
+        font-size: 15px;
+        font-weight:500;
     }
 
 
@@ -639,7 +654,7 @@ footer ion-icon{
     .about_text{
         padding: 3% 0 5%;
     }
-    #about p{
+    .about_text p{
         font-size: 0.8rem;
     }
     .about_ul ion-icon{
@@ -696,14 +711,11 @@ footer ion-icon{
     *{
         font-size: 0.8rem;
     }
-    #yun div p{
-        font-size: 0.9rem;
+    #yun .title{
+        font-size: 20px;
     }
     #yun_btn img{
         width: 50%;
-    }
-    #yun div strong{
-        font-size: 0.9rem;
     }
     h1{
         font-size: 1.2rem;
