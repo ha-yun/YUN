@@ -251,6 +251,24 @@ header{
     margin: 0 auto;
     padding: 2% 0;
 }
+#notion{
+    width: 30%;
+    padding: 1%;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 100;
+    margin-top: 20px;
+    background-color: #deeaff00;
+    box-shadow:  2px 2px 3px 1px #00214da8;
+    color: #00214d;
+}
+#notion:hover{
+    background-color: #00214d;
+    color: #92B4EC;
+}
 .about_text{
     width: 70%;
     margin: 0 auto;
