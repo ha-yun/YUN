@@ -62,6 +62,9 @@ body{
     left: 0;
     z-index: -1;
 }
+#mainBG::-webkit-media-controls-fullscreen-button { 
+    display: none !important; 
+}
 .mainBG2{
     width: 100%;
     position: fixed;
@@ -91,7 +94,7 @@ header{
     }}
 
 .navbar-light .navbar-toggler {
-    border-color: #00214d;
+    border:none;
     color: #00214d;}
 
 .offcanvas.show{
@@ -401,8 +404,13 @@ header{
     }
 
     .skill_img{
+        max-width: 350px;
         width: 65%;
         margin: 5.5% 0;
+    }
+    .skill_detail{
+        max-width: 400px;
+        margin: 10px 0;
     }
 .skills_txt{
     position: absolute;
